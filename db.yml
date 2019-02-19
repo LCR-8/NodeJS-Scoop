@@ -1,0 +1,77 @@
+users:
+  LCR:
+    username: LCR
+    articleIds:
+      - 1
+      - 2
+    commentIds:
+      - 1
+      - 2
+  Roger!:
+    username: Roger!
+    articleIds:
+      - 3
+    commentIds:
+      - 3
+articles:
+  '1':
+    id: 1
+    title: ROger Go Roger Go!!!
+    url: www.rantanplan.com
+    username: LCR
+    commentIds:
+      - 1
+      - 2
+    upvotedBy: []
+    downvotedBy:
+      - LCR
+    comments:
+      - &ref_0
+        id: 1
+        body: C'est qui Roger?
+        articleId: 1
+        username: LCR
+        upvotedBy: []
+        downvotedBy:
+          - LCR
+      - &ref_1
+        id: 2
+        body: Rantanplan a rien à voir avec Roger!?
+        articleId: 1
+        username: LCR
+        upvotedBy:
+          - LCR
+        downvotedBy: []
+  '2':
+    id: 2
+    title: La vie passionnante des rododendrons!
+    url: www.fleuristeristcaliste.ca
+    username: LCR
+    commentIds: []
+    upvotedBy: []
+    downvotedBy: []
+    comments: []
+  '3':
+    id: 3
+    title: Moé c'est Roger!
+    url: www.perdu.com
+    username: Roger!
+    commentIds:
+      - 3
+    upvotedBy: []
+    downvotedBy: []
+    comments:
+      - &ref_2
+        id: 3
+        body: 'AH ben là Bravo!  Hen, vraiment...c''est beau!'
+        articleId: 3
+        username: Roger!
+        upvotedBy:
+          - Roger!
+        downvotedBy: []
+nextArticleId: 4
+comments:
+  '1': *ref_0
+  '2': *ref_1
+  '3': *ref_2
+nextCommentId: 4
